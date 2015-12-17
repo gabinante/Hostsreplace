@@ -1,0 +1,2 @@
+# Hostsreplace
+We have an application that makes really stupid queries and takes forever to respond, but compliance dictates that we have it behind cloudfront (easiest way to geo-gate the application.) Unfortunately, cloudfront timeouts are static so certain pages just won’t load via the regular web interface. This script is designed to circumvent cloudfront by continually refreshing your hosts file with the dynamic IP of the cloudfront host.
